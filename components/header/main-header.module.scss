@@ -1,0 +1,19 @@
+@import "@/app/variables.scss";
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: $headerHeight;
+
+  .logo {
+    padding: 20px;
+  }
+
+  .list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}

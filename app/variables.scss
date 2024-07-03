@@ -1,0 +1,41 @@
+$main: #209e71;
+$main05: #209e7280;
+$lightMain: #b0ebb4;
+$lightMain05: #b0ebb480;
+$second: #1da9ae;
+$second05: #1da9ae80;
+$lightSecond: #94d9db;
+$lightSecond05: #94d9db80;
+$third: #fc8115;
+$third05: #fc811580;
+$lightThird: #e0934d;
+$lightThird05: #e0934d80;
+
+$font1: "Gochi Hand", cursive;
+$font2: "Mynerve", cursive;
+$font3: "Reenie Beanie", cursive;
+$font4: "Sedgwick Ave Display", cursive; /*bonus*/
+$fontText: "Handlee", cursive;
+
+$headerHeight: 194px;
+$slideHeight: 30rem;
+
+:export {
+  mainCol: $main;
+  main05: $main05;
+  lightMain: $lightMain;
+  lightMain05: $lightMain05;
+  second: $second;
+  second05: $second05;
+  lightSecond: $lightSecond;
+  lightSecond05: $lightSecond05;
+  third: $third;
+  third05: $third05;
+  lightThird: $lightThird;
+  lightThird05: $lightThird05;
+  font1: $font1;
+  font2: $font2;
+  font3: $font3;
+  font4: $font4;
+  fontText: $fontText;
+}

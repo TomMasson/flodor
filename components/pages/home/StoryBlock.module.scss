@@ -1,0 +1,78 @@
+@import "@/app/variables.scss";
+
+.title {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.histoire {
+  position: relative;
+
+  .img1,
+  .img3,
+  .img5 {
+    text-align: right;
+  }
+
+  .img2,
+  .img4 {
+    text-align: left;
+  }
+
+  .txt {
+    position: absolute;
+    border-radius: 5px;
+    width: 30%;
+    padding: 25px;
+    text-align: left;
+    background: rgba($color: #fff, $alpha: 0.8);
+    bottom: 0;
+    z-index: 10;
+  }
+  .txt1,
+  .txt3,
+  .txt5 {
+    @extend .txt;
+    right: 125px;
+  }
+
+  .txt2,
+  .txt4 {
+    @extend .txt;
+    left: 125px;
+  }
+
+  .txt3 {
+    bottom: 150px;
+  }
+  .txt4 {
+    bottom: 250px;
+  }
+
+  .txt5 {
+    bottom: 300px;
+  }
+
+  .txt6 {
+    @extend .txt;
+    position: fixed;
+    left: 35%;
+    background: rgba($color: #fff, $alpha: 0.85);
+    bottom: 70%;
+    z-index: 1;
+  }
+
+  .lastContainer {
+    z-index: -1;
+    position: relative;
+    transform: translate(0, -800px);
+  }
+}
+
+.image {
+  border-radius: 15px;
+}
+.signature {
+  font-family: $fontText;
+  padding: 20px 0 0px;
+}

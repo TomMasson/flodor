@@ -1,0 +1,15 @@
+.input {
+  padding: 5px 10px;
+  width: 100%;
+  color: black;
+  height: 30px;
+  border-radius: 4px;
+  border: 0px;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 12px 2px;
+  border: 1px solid black;
+}
+
+/*TODO: enlever le surlignement bleu*/
+.input:focus {
+  border: 0px;
+}

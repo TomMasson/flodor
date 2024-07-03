@@ -1,0 +1,10 @@
+.grid {
+  z-index: 2;
+  position: relative;
+  max-width: 70rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  gap: 2rem;
+}

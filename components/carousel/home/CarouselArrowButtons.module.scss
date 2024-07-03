@@ -1,0 +1,36 @@
+.emblaButton {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 1;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.emblaButton:disabled {
+  color: gray;
+}
+
+.next {
+  right: -75px;
+}
+
+.prev {
+  left: -75px;
+}
+.emblaButtonSvg {
+  width: 35%;
+  height: 35%;
+}

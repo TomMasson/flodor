@@ -1,0 +1,96 @@
+@import "@/app/variables.scss";
+
+.embla {
+  $slide-spacing: 1rem;
+  $slideSize: auto;
+
+  .viewport {
+    overflow: hidden;
+
+    .container {
+      backface-visibility: hidden;
+      display: flex;
+      touch-action: pan-y pinch-zoom;
+      margin-left: calc($slide-spacing * -1);
+
+      .slide {
+        flex: 0 0 $slideSize;
+        min-width: 0;
+        padding-left: $slide-spacing;
+
+        .parallax {
+          border-radius: 1.8rem;
+          height: 100%;
+          overflow: hidden;
+
+          .layer {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .image {
+              border-radius: 1.8rem;
+              display: block;
+              height: $slideHeight;
+              width: 100%;
+              object-fit: cover;
+
+              /* for paralax */
+              max-width: none;
+              flex: 0 0 100%; /* calc(115% + (var($slide-spacing) * 2)) */
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.controls {
+  .button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 3.6rem;
+    height: 3.6rem;
+    z-index: 1;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+  }
+
+  .button:disabled {
+    cursor: not-allowed;
+    color: lightgray;
+    background: gray;
+  }
+
+  .button:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  .prev {
+    position: absolute;
+    top: 45%;
+    left: 5px;
+  }
+
+  .next {
+    position: absolute;
+    top: 45%;
+    right: 5px;
+  }
+}

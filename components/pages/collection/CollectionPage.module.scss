@@ -1,0 +1,28 @@
+@import "@/app/variables.scss";
+
+.header {
+  position: relative;
+  width: 100%;
+  height: $slideHeight;
+}
+
+.infos {
+  flex-grow: 1;
+  display: flex;
+
+  .title {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 3rem;
+  }
+
+  .description {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
