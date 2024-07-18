@@ -5,7 +5,7 @@ const Logo = ({ size, isLink = false, ...rest }) => {
   const image = (
     <Image
       style={{ clipPath: `circle(${size / 2}px)`, objectFit: "contain" }}
-      src={"/images/logo.jpg"}
+      src={"/images/logo.png"}
       alt="Logo fil etnic"
       width={size}
       height={size}

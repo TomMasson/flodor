@@ -1,0 +1,42 @@
+@import "@/app/style/breakpoints";
+@import "@/app/style/variables";
+
+.mobileHeader {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  height: 300px;
+  width: 100%;
+  transform: translateY(-230px);
+  background: $main;
+  transition: 1s 0.2s transform cubic-bezier(0.1, 0.72, 0.4, 0.97);
+  flex-direction: column;
+
+  display: none;
+  @include respond-to(tablet) {
+    display: flex;
+  }
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  .navbar {
+    width: 100vw;
+    display: flex;
+    background-color: $main;
+    justify-content: space-between;
+
+    .title {
+      flex-grow: 3;
+      text-align: center;
+      margin: auto;
+    }
+
+    .logo {
+      width: 100px;
+      text-align: center;
+      margin: auto;
+    }
+  }
+}

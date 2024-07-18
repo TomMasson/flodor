@@ -1,6 +1,13 @@
+@import "@/app/style/breakpoints";
+
 .main {
   padding: 20px;
   text-align: center;
+  overflow: scroll;
+
+  @include respond-to(tablet) {
+    padding-top: 120px;
+  }
 
   .histoire {
     margin-top: 50px;

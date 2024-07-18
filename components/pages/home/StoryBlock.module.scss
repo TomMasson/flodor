@@ -1,4 +1,5 @@
-@import "@/app/variables.scss";
+@import "@/app/style/variables.scss";
+@import "@/app/style/breakpoints.scss";
 
 .title {
   text-align: center;
@@ -7,6 +8,10 @@
 
 .histoire {
   position: relative;
+
+  @include respond-to(tablet) {
+    display: none;
+  }
 
   .img1,
   .img3,
@@ -67,12 +72,12 @@
     position: relative;
     transform: translate(0, -800px);
   }
-}
 
-.image {
-  border-radius: 15px;
-}
-.signature {
-  font-family: $fontText;
-  padding: 20px 0 0px;
+  .image {
+    border-radius: 15px;
+  }
+  .signature {
+    font-family: $fontText;
+    padding: 20px 0 0px;
+  }
 }

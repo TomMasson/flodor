@@ -54,12 +54,13 @@ const StoryBlock = () => {
   const txt4 = useTransform(scrollYProgress4, [0, 1], [0, -800]);
   const txt5 = useTransform(scrollYProgress5, [0, 1], [0, -800]);
 
+  // @TODO virer les IDs histoire2... ?
   return (
     <>
       <motion.h1 id="histoire" className={styles.title}>
         De fil en aiguille...
       </motion.h1>
-      <div ref={parent} className={styles.histoire}>
+      <div ref={parent}>
         <div ref={container1} id="histoire2" className={styles.histoire}>
           <motion.div className={styles.img1}>
             <Image

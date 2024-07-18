@@ -1,4 +1,12 @@
-.logo {
-  position: absolute;
-  margin: 45px 25px;
+@import "@/app/style/breakpoints";
+
+.homeHeader {
+  @include respond-to(tablet) {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+    margin: 45px 25px;
+  }
 }

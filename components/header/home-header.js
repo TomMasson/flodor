@@ -9,7 +9,7 @@ const HomeHeader = () => {
   const slides = Array.from(Array(nbSlides).keys());
 
   return (
-    <header>
+    <header className={styles.homeHeader}>
       <div className={styles.logo}>
         <Logo size={200} isLink={false} />
       </div>
