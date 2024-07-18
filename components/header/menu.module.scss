@@ -1,0 +1,19 @@
+@import "@/app/style/breakpoints.scss";
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+
+  @include respond-to(tablet) {
+    flex-direction: column;
+    height: 200px;
+    padding: 0 0 0 0;
+    justify-content: center;
+
+    a {
+      padding: 50px;
+    }
+  }
+}

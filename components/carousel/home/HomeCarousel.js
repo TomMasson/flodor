@@ -7,7 +7,6 @@ import {
   usePrevNextButtons,
 } from "./CarouselArrowButtons";
 import useEmblaCarousel from "embla-carousel-react";
-import Link from "next/link";
 
 const HomeCarousel = (props) => {
   const { slides, options } = props;
@@ -26,12 +25,10 @@ const HomeCarousel = (props) => {
         <div className={styles.emblaContainer}>
           {slides.map((index) => (
             <div className={styles.emblaSlide} key={index}>
-              <Link href={`/collections/home/${index}/b`}>
-                <img
-                  className={styles.emblaImage}
-                  src={`/images/collection/home/${index}.jpg`}
-                />
-              </Link>
+              <img
+                className={styles.emblaImage}
+                src={`/images/collection/home/${index}.jpg`}
+              />
             </div>
           ))}
         </div>

@@ -1,4 +1,4 @@
-@import "@/app/variables.scss";
+@import "@/app/style/variables.scss";
 
 .embla {
   $slide-spacing: 1rem;
@@ -29,6 +29,7 @@
             width: 100%;
             display: flex;
             justify-content: center;
+            transition: filter 0.7s, opacity 1s;
 
             .image {
               border-radius: 1.8rem;

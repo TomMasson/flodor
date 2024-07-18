@@ -1,4 +1,4 @@
-import Button from "../oldButton";
+import Button from "../Button";
 import styles from "./ContactForm.module.scss";
 import Input from "./Input";
 
