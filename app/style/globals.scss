@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Handlee&family=Mynerve&family=Reenie+Beanie&family=Sedgwick+Ave+Display&display=swap");
 @import "./variables.scss";
 
 html {
@@ -12,7 +11,7 @@ body {
 
 h1 {
   margin: 0;
-  font-family: $font4; /* ou font 1*/
+  font-family: $font4;
   font-size: 55px;
   font-weight: 300;
 }
