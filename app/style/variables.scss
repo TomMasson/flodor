@@ -13,11 +13,11 @@ $third05: #fc811580;
 $lightThird: #e0934d;
 $lightThird05: #e0934d80;
 
-$font1: "Gochi Hand", cursive;
-$font2: "Mynerve", cursive;
-$font3: "Reenie Beanie", cursive;
-$font4: "Sedgwick Ave Display", cursive;
-$fontText: "Handlee", cursive;
+$font1: var(--font1);
+$font2: var(--font2);
+$font3: var(--font3);
+$font4: var(--font4);
+$fontText: var(--fontText);
 
 $headerHeight: 194px;
 $slideHeight: 30rem;
