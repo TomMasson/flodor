@@ -1,19 +1,24 @@
 @import "@/app/style/breakpoints.scss";
+@import "@/app/style/variables";
 
 .list {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 2.5rem;
+  font-family: $fontTitle;
+  font-size: 1.5rem;
+  font-weight: 600;
 
   @include respond-to(tablet) {
     flex-direction: column;
     height: 200px;
     padding: 0 0 0 0;
     justify-content: center;
+    gap: 2rem;
 
     a {
-      padding: 50px;
+      padding: 10px;
     }
   }
 }

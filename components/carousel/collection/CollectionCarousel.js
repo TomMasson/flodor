@@ -92,6 +92,18 @@ const EmblaCarousel = ({ collection, options }) => {
       .on("scroll", tweenParallax);
   }, [emblaApi, tweenParallax]);
 
+  //@TODO Opti et gérer la boucle de photos
+  const getOpacity = (index) => {
+    if (selectedSnap == index) {
+      return "1";
+    }
+    if (selectedSnap + 1 == index || selectedSnap - 1 == index) {
+      return "0.75";
+    } else {
+      return "0";
+    }
+  };
+
   return (
     <div className={styles.embla}>
       <div className={styles.viewport} ref={emblaRef}>
@@ -108,7 +120,7 @@ const EmblaCarousel = ({ collection, options }) => {
                     width: "100%",
                     display: "flex",
                     justifyContent: "center",
-                    opacity: selectedSnap === index ? "1" : "0.5",
+                    opacity: getOpacity(index),
                     filter: selectedSnap === index ? "none" : "blur(10px)",
                   }}
                 >

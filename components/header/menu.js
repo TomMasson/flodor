@@ -1,7 +1,7 @@
 import NavLink from "./nav-link";
 import styles from "./menu.module.scss";
 
-const Menu = () => {
+const Menu = ({ handleClose }) => {
   return (
     <ul className={styles.list}>
       <li>
@@ -10,13 +10,20 @@ const Menu = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink href={"/collections"}>Collections</NavLink>
+        <NavLink href={"/collections"} closeBurger={handleClose}>
+          Collections
+        </NavLink>
       </li>
       <li>
-        <NavLink href={"/sur-mesure"}> Sur mesure</NavLink>
+        <NavLink href={"/sur-mesure"} closeBurger={handleClose}>
+          {" "}
+          Sur mesure
+        </NavLink>
       </li>
       <li>
-        <NavLink href={"/contact"}>Contact</NavLink>
+        <NavLink href={"/contact"} closeBurger={handleClose}>
+          Contact
+        </NavLink>
       </li>
     </ul>
   );

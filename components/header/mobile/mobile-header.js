@@ -14,9 +14,13 @@ const MobileHeader = () => {
     setIsActive(!isActive);
     setInitAnim(0);
   };
+
+  const closeBurger = () => {
+    setIsActive(false);
+  };
   return (
     <nav className={`${styles.mobileHeader} ${isActive ? styles.active : ""}`}>
-      <Menu />
+      <Menu handleClose={closeBurger} />
       <div className={styles.navbar}>
         <Hamburger
           isOpen={isActive}
@@ -24,10 +28,10 @@ const MobileHeader = () => {
           handleClick={() => handleAnim()}
         />
         <div className={styles.title}>
-          <h1>FilEtnic</h1>
+          <h1>fil ETNIC</h1>
         </div>
         <div className={styles.logo}>
-          <Logo size={80} isLink={true} />
+          <Logo size={80} isLink={true} isJPG={true} />
         </div>
       </div>
     </nav>

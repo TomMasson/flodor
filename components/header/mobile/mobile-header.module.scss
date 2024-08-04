@@ -7,7 +7,8 @@
   top: 0;
   height: 300px;
   width: 100%;
-  transform: translateY(-230px);
+  //@TODO: la height doit être fixe et pas bouger en fonction de la taille de la police
+  transform: translateY(-250px);
   background: $main;
   transition: 1s 0.2s transform cubic-bezier(0.1, 0.72, 0.4, 0.97);
   flex-direction: column;
@@ -21,8 +22,10 @@
     transform: translateY(0);
   }
 
+  //@TODO nav bar background color a virer
   .navbar {
     width: 100vw;
+    height: 80px;
     display: flex;
     background-color: $main;
     justify-content: space-between;
@@ -31,6 +34,9 @@
       flex-grow: 3;
       text-align: center;
       margin: auto;
+      h1 {
+        font-size: 2.5rem;
+      }
     }
 
     .logo {
