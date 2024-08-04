@@ -1,6 +1,11 @@
 @import "@/app/style/variables.scss";
+@import "@/app/style/breakpoints.scss";
 
 .headerContent {
+  @include respond-to(tablet) {
+    display: none;
+  }
+
   display: flex;
   justify-content: space-between;
   padding: 0 40px;

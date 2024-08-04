@@ -1,4 +1,5 @@
 @import "@/app/style/variables.scss";
+@import "@/app/style/breakpoints";
 
 .header {
   position: relative;
@@ -24,5 +25,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@include respond-to(tablet) {
+  .header {
+    margin-top: 80px;
+  }
+
+  .infos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      width: 100%;
+      padding-top: 20px;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .description {
+      width: 80%;
+    }
   }
 }

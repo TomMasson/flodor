@@ -1,36 +1,12 @@
-import {
-  Gochi_Hand,
-  Mynerve,
-  Reenie_Beanie,
-  Sedgwick_Ave_Display,
-  Handlee,
-} from "next/font/google";
+import "@/app/style/globals.scss";
+import MobileHeader from "@/components/header/mobile/mobile-header";
 
-const font1 = Gochi_Hand({
+import { Mynerve, Handlee } from "next/font/google";
+
+const fontTitle = Mynerve({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-roboto-mono",
-  display: "swap",
-});
-
-const font2 = Mynerve({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font2",
-  display: "swap",
-});
-
-const font3 = Reenie_Beanie({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font3",
-  display: "swap",
-});
-
-const font4 = Sedgwick_Ave_Display({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font4",
+  variable: "--fontTitle",
   display: "swap",
 });
 
@@ -48,11 +24,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${font1.variable} ${font2.variable} ${font3.variable} ${font4.variable} ${fontText.variable}`}
-    >
-      <body>{children}</body>
+    <html lang="en" className={`${fontTitle.variable} ${fontText.variable}`}>
+      <body>
+        <MobileHeader />
+        {children}
+      </body>
     </html>
   );
 }
